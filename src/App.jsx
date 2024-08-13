@@ -1,33 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
+import HeaderComponent from './components/HeaderComponent';
+import MainComponent from './components/MainComponent';
+import FooterComponent from './components/FooterComponent'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+     <HeaderComponent />
+     <MainComponent/>
+     <FooterComponent/>
+
+      {/* <div class="wrapper">
+        <header>
+          <h1 class="Text_phoneNumber">🔥 Fireplace Palace</h1>
+        </header>
+        <main>
+          <section class ="hero">
+            <article>
+                <img class="first-image" src="src/assets/hero-mobile.png" alt="fireplace"/>
+            </article>
+            <article class="text_bgColor">
+                <h1 class="hero-heading">Discover the <br/>Perfect Fireplace ...</h1>
+                <h2 class="Text_phoneNumber">Book consultation:<span class="phoneNumber"> 0121 345 6789</span></h2>
+            </article>
+          </section>
+          <section class ="how-it-works-container">
+            <h2>How is works</h2>           
+              <article class ="tiles">
+                <img class="how-it-works" src="src/assets/how-it-works-1.png" alt="phonecall" />
+                <h3>Give us a call...</h3>
+                <p>Call us and book in a "design consultation" on a date and time that suits you.</p>
+              </article>
+              <article class ="tiles">
+                <img class="how-it-works" src="src/assets/how-it-works-2.png" alt="home visit" />
+                <h3>We come to you...</h3>
+                <p>We come to your home to do an assessment of the space and to your style preference.</p>
+              </article>
+              <article class ="tiles">
+                <img class="how-it-works" src="src/assets/how-it-works-3.png" alt="recommendation" />
+                <h3>We recommend...</h3>
+                <p>We send you a bespoke set of fireplace recommendations.</p>
+              </article>           
+          </section>
+        </main>
+        <footer>
+          <section class ="footer-container">
+            <article>
+              <p>Find us on:</p>
+              <p>Facebook</p>
+              <p>Instagram</p>
+              <p>Ticktock</p>            
+            </article>
+              <p>copyright</p>
+            <article>             
+            </article>
+          </section>
+        </footer>
+    </div> */}
+   
     </>
   )
 }
