@@ -1,11 +1,12 @@
 import React from 'react'
+import './style.css';
 
 export default function FooterComponent() {
   return (
     <div>
       <footer>
               <section className ="footer-container">
-                <article>
+                <article className='footer-column'>
                   <ul>
                     <li>Find us on:</li>
                     <li><a href="https://www.facebook.com" class="social-link">Facebook</a></li>
@@ -14,7 +15,7 @@ export default function FooterComponent() {
                   </ul>           
                 </article>
                   
-                <article>  
+                <article className='footer-column'>
                 <p>Contact us:</p>
                 <address><a href="mailto:info@firepalace.co.uk" class="email-link"
                 >info@firepalace.co.uk</a></address>
