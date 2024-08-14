@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css';
 import HeaderComponent from './components/Header/HeaderComponent';
-import MainComponent from './components/Main/MainComponent';
+import HowItWorks from './components/HowItWorks/HowItWorks';
 import FooterComponent from './components/Footer/FooterComponent'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <>
 
      <HeaderComponent />
-     <MainComponent/>
+     <HowItWorks/>
      <FooterComponent/>
 
       {/* <div class="wrapper">
